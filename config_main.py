@@ -65,7 +65,6 @@ TICKER_LIST = [
             'AAVEUSDT',
             'ADAUSDT',
             'AVAXUSDT',
-            'BNBUSDT',
             'BTCUSDT',
             'ETHUSDT',
             'LINKUSDT',

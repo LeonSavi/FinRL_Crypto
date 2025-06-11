@@ -86,6 +86,7 @@ def set_Pandas_Timedelta(TIMEFRAME):
                           '10m': pd.Timedelta(minutes=10),
                           '30m': pd.Timedelta(minutes=30),
                           '1h': pd.Timedelta(hours=1),
+                          '4h': pd.Timedelta(hours=4), # manually added
                           '1d': pd.Timedelta(days=1),
                           }
     if TIMEFRAME in timeframe_to_delta:
