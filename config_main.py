@@ -42,11 +42,12 @@ def nCr(n, r):
 #######################################################################################################
 #######################################################################################################
 
-trade_start_date = '2022-04-30 00:00:00'
-trade_end_date = '2022-06-27 00:00:00'
+
+trade_start_date = '2025-03-01 00:00:00'
+trade_end_date = '2025-05-31 00:00:00'
 
 SEED_CFG = 2390408
-TIMEFRAME = '5m'
+TIMEFRAME = '4h'
 H_TRIALS = 50
 KCV_groups = 5
 K_TEST_GROUPS = 2
@@ -56,20 +57,23 @@ NUMBER_OF_SPLITS = nCr(N_GROUPS, N_GROUPS - K_TEST_GROUPS)
 
 print(NUMBER_OF_SPLITS)
 
-no_candles_for_train = 20000
-no_candles_for_val = 5000
+no_candles_for_train = 8900 #20000
+no_candles_for_val = 500 #5000
 
-TICKER_LIST = ['AAVEUSDT',
-               'AVAXUSDT',
-               'BTCUSDT',
-               'NEARUSDT',
-               'LINKUSDT',
-               'ETHUSDT',
-               'LTCUSDT',
-               'MATICUSDT',
-               'UNIUSDT',
-               'SOLUSDT',
-               ]
+
+TICKER_LIST = [
+            'AAVEUSDT',
+            'ADAUSDT',
+            'AVAXUSDT',
+            'BNBUSDT',
+            'BTCUSDT',
+            'ETHUSDT',
+            'LINKUSDT',
+            'LTCUSDT',
+            'NEARUSDT',
+            'SOLUSDT',
+            'UNIUSDT'
+        ]
 
 
 # Minimum buy limits

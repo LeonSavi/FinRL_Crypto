@@ -160,9 +160,14 @@ class BinanceProcessor():
         self.tech_indicator_list = list(df.columns)
         self.tech_indicator_list.remove('tic')
         print('adding technical indiciators (no:', len(self.tech_indicator_list), ') :', self.tech_indicator_list)
-
+        df.to_csv('data_tech.csv')
         unique_ticker = df.tic.unique()
         if_first_time = True
+
+        for tic in unique_ticker:
+            print(tic,'size',(df[df.tic == tic].shape),'min',min(df[df.tic == tic].index),'max',max(df[df.tic == tic].index))
+
+
         for tic in unique_ticker:
             if if_first_time:
                 price_array = df[df.tic == tic][['close']].values

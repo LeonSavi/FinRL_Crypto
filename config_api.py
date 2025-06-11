@@ -2,5 +2,5 @@
 Enter your Binance API keys here.
 '''
 
-API_KEY_BINANCE = 'Enter your public key here!'
-API_SECRET_BINANCE = 'Enter your secret key here!'
+API_KEY_BINANCE = 'CLNTJS8DrXgEtEEnLSqncNKbWkd7IhdWfM5zu6zhNszoqBdjBnGk7ZlhNCZmFfC5'
+API_SECRET_BINANCE = 'hmzuBECW7LWzAMoxDSFYUl3f1Ib254BKTYYEQ6QKSFKKHZhtJ78ajJXo5PO8bRXO'
